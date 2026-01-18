@@ -28,7 +28,7 @@ def find_overloaded_users(events):
             # Count events within 10 seconds from current event
             count = 0
             for j in range(i, len(timestamps)):
-                if timestamps[j] - timestamps[i] < 10:
+                if timestamps[j] - timestamps[i] <= 10:
                     count += 1
                 else:
                     break
